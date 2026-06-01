@@ -17,7 +17,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-
 .sec{font-size:11px;font-weight:600;color:var(--txt3);text-transform:uppercase;letter-spacing:.08em;margin:1.75rem 0 .75rem}
 .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
 .mcard{background:var(--sur);border:1px solid var(--bdr);border-radius:var(--r);padding:1.1rem 1.25rem}
 .mcard-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .mcard-label{font-size:12px;color:var(--txt2);font-weight:500}.sdot{width:8px;height:8px;border-radius:50%}
@@ -38,10 +37,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-
 .ticket{font-size:11px;font-weight:500;background:#E6F1FB;color:#0C447C;padding:2px 8px;border-radius:4px;margin-right:4px;font-family:'DM Mono',monospace}
 .ftr{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--txt3);flex-wrap:wrap;gap:8px}
 .stamp{font-family:'DM Mono',monospace;font-size:10px}
-@media(max-width:900px){.g4,.g3{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}}
-@media(max-width:500px){.g4,.g3,.g2{grid-template-columns:1fr}}
+@media(max-width:900px){.g4,.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.g4,.g3{grid-template-columns:1fr}}
 </style></head><body>
-
 <div class="hdr">
   <div>
     <div class="title">Engineering metrics — ENG-POC</div>
@@ -52,7 +50,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-
     <div class="live"><span class="dot"></span>Live</div>
   </div>
 </div>
-
 <div class="sec">Quality &amp; velocity</div>
 <div class="g4">
   <div class="mcard"><div class="mcard-top"><span class="mcard-label">Test coverage (line)</span><span class="sdot" style="background:#2D6A1F"></span></div><div class="mcard-val" style="color:#2D6A1F">100%</div><div class="mcard-target">Target &ge; 80%</div><div class="bar"><div class="bar-fill" style="width:100%;background:#2D6A1F"></div></div></div>
@@ -60,14 +57,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-
   <div class="mcard"><div class="mcard-top"><span class="mcard-label">Defect escape rate</span><span class="sdot" style="background:#2D6A1F"></span></div><div class="mcard-val" style="color:#2D6A1F">0%</div><div class="mcard-target">Target &le; 10% &nbsp;&middot;&nbsp; 0/0 bugs</div><div class="bar"><div class="bar-fill" style="width:0%;background:#2D6A1F"></div></div></div>
   <div class="mcard"><div class="mcard-top"><span class="mcard-label">Client satisfaction</span><span class="sdot" style="background:#2D6A1F"></span></div><div class="mcard-val" style="color:#2D6A1F">4.3/5</div><div class="mcard-target">Target &ge; 4/5</div><div class="bar"><div class="bar-fill" style="width:86%;background:#2D6A1F"></div></div></div>
 </div>
-
 <div class="sec">Sprint health</div>
 <div class="g3">
   <div class="mcard"><div class="mcard-top"><span class="mcard-label">Carry-forward rate</span><span class="sdot" style="background:#2D6A1F"></span></div><div class="mcard-val" style="color:#2D6A1F">0%</div><div class="mcard-target">Target &le; 15% &nbsp;&middot;&nbsp; 0/0 incomplete</div><div class="bar"><div class="bar-fill" style="width:0%;background:#2D6A1F"></div></div></div>
   <div class="mcard"><div class="mcard-top"><span class="mcard-label">Retro action completion</span><span class="sdot" style="background:#8B2020"></span></div><div class="mcard-val" style="color:#8B2020">0%</div><div class="mcard-target">Target &ge; 80% &nbsp;&middot;&nbsp; 0/0 done</div><div class="bar"><div class="bar-fill" style="width:0%;background:#8B2020"></div></div></div>
   <div class="mcard"><div class="mcard-top"><span class="mcard-label">Sprint completion</span><span class="sdot" style="background:#2D6A1F"></span></div><div class="mcard-val" style="color:#2D6A1F">0%</div><div class="mcard-target">0 of 0 issues done</div><div class="bar"><div class="bar-fill" style="width:0%;background:#2D6A1F"></div></div></div>
 </div>
-
 <div class="sec">DORA metrics</div>
 <div class="g4">
   <div class="card">
@@ -76,7 +71,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-
       <div class="dnum" style="color:#2D6A1F">1<span class="dunit">prod deploys</span></div>
       <div class="dtgt">Target &ge; 1 per sprint</div>
       <div class="dr"><span class="dr-l">Source</span><span class="dr-v">ADO pipeline</span></div>
-      <div class="dr"><span class="dr-l">Latest build</span><span class="dr-v">22</span></div>
+      <div class="dr"><span class="dr-l">Latest build</span><span class="dr-v">23</span></div>
     </div>
   </div>
   <div class="card">
@@ -93,7 +88,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-
     <div class="card-body">
       <div class="dnum" style="color:#2D6A1F">0.0%<span class="dunit">failure rate</span></div>
       <div class="dtgt">Target &le; 15% &nbsp;&middot;&nbsp; Source: ADO build history</div>
-      <div class="dr"><span class="dr-l">Successful</span><span class="dr-v" style="color:#2D6A1F">1</span></div>
+      <div class="dr"><span class="dr-l">Successful</span><span class="dr-v" style="color:#2D6A1F">7</span></div>
       <div class="dr"><span class="dr-l">Failed</span><span class="dr-v" style="color:#2D6A1F">0</span></div>
     </div>
   </div>
@@ -107,24 +102,22 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-
     </div>
   </div>
 </div>
-
 <div class="sec">Latest production deployment</div>
 <div class="card">
   <div class="card-body" style="padding:8px 16px">
     <div class="di">
       <div class="di-ico" style="background:#EAF3DE;color:#2D6A1F">&#10003;</div>
       <div style="flex:1">
-        <div class="di-title">Build 22 — production</div>
-        <div class="di-meta">2026-06-01 15:56 UTC &nbsp;&middot;&nbsp; branch: main</div>
+        <div class="di-title">Build 23 — production</div>
+        <div class="di-meta">2026-06-01 16:10 UTC &nbsp;&middot;&nbsp; branch: main</div>
         <div style="margin-top:6px"><span class="ticket">EP-1</span></div>
       </div>
       <span class="badge" style="background:#EAF3DE;color:#2D6A1F;flex-shrink:0">Success</span>
     </div>
   </div>
 </div>
-
 <div class="ftr">
   <div>Sources: Jira Cloud (ENG-POC) &nbsp;&middot;&nbsp; Azure DevOps (ADO build API) &nbsp;&middot;&nbsp; GitHub (vineeshaesf/dotnet-sample-app)</div>
-  <div class="stamp">Build 22 &nbsp;&middot;&nbsp; 2026-06-01 15:56 UTC</div>
+  <div class="stamp">Build 23 &nbsp;&middot;&nbsp; 2026-06-01 16:10 UTC</div>
 </div>
 </body></html>
